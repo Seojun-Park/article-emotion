@@ -11,6 +11,7 @@ import { Navigator, SelectButton } from './components';
 import { iconData } from './data';
 import _ from 'lodash';
 import { htmlContent } from './htmlContent';
+const { BASE_URL } = import.meta.env;
 
 const App: FC = () => {
   const [selectedNav, setSelectedNav] = useState<number>(0);
@@ -151,7 +152,7 @@ const App: FC = () => {
                       key={idx}
                       alignItems={'center'}>
                       <SelectButton
-                        source={`assets/htmls/images/${selection.desc}.png`}
+                        source={`${BASE_URL}/assets/htmls/images/${selection.desc}.png`}
                         onSelect={() => {
                           console.log(selection);
                           handleSelect(selection);

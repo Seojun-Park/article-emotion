@@ -5,6 +5,8 @@ import { combination } from '../combination';
 import { iconData } from '../data';
 import { SelectButton } from './SelectButton';
 import { useOptionContext } from '../contexts';
+const { BASE_URL } = import.meta.env;
+
 
 interface SelectedViewProps {
   topic: number;
@@ -93,7 +95,7 @@ export const SelectedView: FC<SelectedViewProps> = ({ selected, topic }) => {
               elevation={4}>
               <Box
                 component={'img'}
-                src={`assets/htmls/images/${
+                src={`${BASE_URL}/assets/htmls/images/${
                   iconData[topic].icons[selected[0]]?.desc
                 }.png`}
                 alt='icon'
@@ -111,14 +113,14 @@ export const SelectedView: FC<SelectedViewProps> = ({ selected, topic }) => {
                 spacing={2}>
                 <Box
                   component={'img'}
-                  src={`assets/htmls/images/${
+                  src={`${BASE_URL}/assets/htmls/images/${
                     iconData[topic].icons[selected[0]]?.desc
                   }.png`}
                   alt='icon'
                 />
                 <Box
                   component={'img'}
-                  src={`assets/htmls/images/${
+                  src={`${BASE_URL}/assets/htmls/images/${
                     iconData[topic].icons[selected[1]]?.desc
                   }.png`}
                   alt='icon'
@@ -141,7 +143,7 @@ export const SelectedView: FC<SelectedViewProps> = ({ selected, topic }) => {
         spacing={1}
         ml={5}>
         <SelectButton
-          source={`assets/htmls/images/${
+          source={`${BASE_URL}/assets/htmls/images/${
             !flag.recommend ? 'move01' : 'move01_on'
           }.png`}
           sx={{
@@ -156,7 +158,7 @@ export const SelectedView: FC<SelectedViewProps> = ({ selected, topic }) => {
           title='추천'
         />
         <SelectButton
-          source={`assets/htmls/images/${
+          source={`${BASE_URL}/assets/htmls/images/${
             !flag.next ? 'move02' : 'move02_on'
           }.png`}
           sx={{

@@ -12,6 +12,8 @@ import _ from 'lodash';
 import { useOptionContext } from './contexts';
 import { htmlContent } from './htmlContent';
 
+const { BASE_URL } = import.meta.env;
+
 const App: FC = () => {
   const [selectedNav, setSelectedNav] = useState<number>(0);
   const [selected, setSelected] = useState<Array<number>>([]);
@@ -67,12 +69,12 @@ const App: FC = () => {
               <ComboImageView topic={selectedNav} />
               <Stack direction={'row'}>
                 <ComboButton
-                  iconPath='assets/htmls/images/move01.png'
+                  iconPath={`${BASE_URL}/assets/htmls/images/move01.png`}
                   desc='추천'
                   number={recommend}
                 />
                 <ComboButton
-                  iconPath='assets/htmls/images/move02.png'
+                  iconPath={`${BASE_URL}/assets/htmls/images/move02.png`}
                   desc='후속기사 원해요'
                   number={nextArticle}
                 />
@@ -107,7 +109,7 @@ const App: FC = () => {
                   return (
                     <SelectButton
                       key={idx}
-                      source={`assets/htmls/images/${selection.desc}.png`}
+                      source={`${BASE_URL}assets/htmls/images/${selection.desc}.png`}
                       onSelect={() => {
                         handleSelect(selection);
                       }}
