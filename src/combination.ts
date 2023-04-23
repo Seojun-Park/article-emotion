@@ -4,6 +4,7 @@ export type CombinationType = {
     combo: number[];
     desc: string;
     icons?: string[];
+    basePick?: number;
   }[];
 };
 
@@ -62,6 +63,7 @@ export const combination: CombinationType[] = [
       {
         combo: [0, 5],
         desc: '고맙지만 부끄러워요',
+        basePick: 3,
       },
       {
         combo: [5, 0],
@@ -122,14 +124,17 @@ export const combination: CombinationType[] = [
       {
         combo: [3, 4],
         desc: '화나고 슬퍼요',
+        basePick: 17,
       },
       {
         combo: [3, 5],
         desc: '화나고 부끄러워요',
+        basePick: 12,
       },
       {
         combo: [4, 5],
         desc: '슬프고 부끄러워요',
+        basePick: 7,
       },
     ],
   },
@@ -155,6 +160,7 @@ export const combination: CombinationType[] = [
       {
         combo: [4, 4],
         desc: '정말 화나요',
+        basePick: 21,
       },
       {
         combo: [5, 5],
@@ -275,14 +281,17 @@ export const combination: CombinationType[] = [
       {
         combo: [4, 5],
         desc: '화나고 슬퍼요',
+        basePick: 7,
       },
       {
         combo: [4, 6],
         desc: '화나고 어의없어요',
+        basePick: 17,
       },
       {
         combo: [5, 6],
         desc: '슬프고 어의없어요',
+        basePick: 11,
       },
     ],
   },
@@ -324,18 +333,22 @@ export const combination: CombinationType[] = [
       {
         combo: [1, 0],
         desc: '고맙고 좋아요',
+        basePick: 14,
       },
       {
         combo: [2, 0],
         desc: '괜찮고 좋아요',
+        basePick: 19,
       },
       {
         combo: [3, 0],
         desc: '웃기고 좋아요',
+        basePick: 6,
       },
       {
         combo: [0, 4],
         desc: '좋지만 화나요',
+        basePick: 3,
       },
       {
         combo: [4, 0],
@@ -601,6 +614,7 @@ export const combination: CombinationType[] = [
       {
         combo: [4, 2],
         desc: '화나지만 웃겨요',
+        basePick: 27,
       },
       {
         combo: [2, 5],
@@ -625,6 +639,7 @@ export const combination: CombinationType[] = [
       {
         combo: [4, 3],
         desc: '화나지만 부러워요',
+        basePick: 20,
       },
       {
         combo: [3, 5],
@@ -637,6 +652,7 @@ export const combination: CombinationType[] = [
       {
         combo: [3, 6],
         desc: '부럽지만 어의없어요',
+        basePick: 12,
       },
       {
         combo: [6, 3],
@@ -653,6 +669,7 @@ export const combination: CombinationType[] = [
       {
         combo: [4, 5],
         desc: '화나고 어의없어요',
+        basePick: 6,
       },
       {
         combo: [5, 6],
@@ -742,6 +759,7 @@ export const combination: CombinationType[] = [
       {
         combo: [4, 1],
         desc: '화나지만 괜찮아요',
+        basePick: 10,
       },
       {
         combo: [1, 5],
@@ -750,6 +768,7 @@ export const combination: CombinationType[] = [
       {
         combo: [5, 1],
         desc: '슬프지만 괜찮아요',
+        basePick: 22,
       },
       {
         combo: [1, 6],
@@ -758,6 +777,7 @@ export const combination: CombinationType[] = [
       {
         combo: [6, 1],
         desc: '어의없지만 괜찮아요',
+        basePick: 14,
       },
       {
         combo: [2, 3],
@@ -814,6 +834,7 @@ export const combination: CombinationType[] = [
       {
         combo: [4, 6],
         desc: '화나고 어의없어요',
+        basePick: 5,
       },
       {
         combo: [5, 6],
@@ -1067,10 +1088,12 @@ export const combination: CombinationType[] = [
       {
         combo: [5, 6],
         desc: '슬프고 어의없어요',
+        basePick: 6,
       },
       {
         combo: [5, 7],
         desc: '슬프고 무서워요',
+        basePick: 11,
       },
       {
         combo: [5, 8],
@@ -1079,6 +1102,7 @@ export const combination: CombinationType[] = [
       {
         combo: [6, 7],
         desc: '어의없고 무서워요',
+        basePick: 20,
       },
       {
         combo: [6, 8],
@@ -1087,6 +1111,7 @@ export const combination: CombinationType[] = [
       {
         combo: [7, 8],
         desc: '무섭고 부끄러워요',
+        basePick: 18,
       },
     ],
   },
@@ -1096,6 +1121,7 @@ export const combination: CombinationType[] = [
       {
         combo: [0, 0],
         desc: '정말 좋아요',
+        basePick: 33,
       },
       {
         combo: [1, 1],
@@ -1128,10 +1154,12 @@ export const combination: CombinationType[] = [
       {
         combo: [1, 0],
         desc: '멋지고 좋아요',
+        basePick: 28,
       },
       {
         combo: [2, 0],
         desc: '괜찮고 좋아요',
+        basePick: 10,
       },
       {
         combo: [3, 0],
@@ -1172,6 +1200,7 @@ export const combination: CombinationType[] = [
       {
         combo: [1, 2],
         desc: '멋지고 괜찮아요',
+        basePick: 16,
       },
       {
         combo: [1, 3],
@@ -1340,11 +1369,13 @@ export const combination: CombinationType[] = [
       },
       {
         combo: [1, 0],
-        desc: ' 좋아요',
+        desc: '멋지고 좋아요',
+        basePick: 19,
       },
       {
         combo: [2, 0],
         desc: '괜찮고 좋아요',
+        basePick: 29,
       },
       {
         combo: [3, 0],
@@ -1377,6 +1408,7 @@ export const combination: CombinationType[] = [
       {
         combo: [7, 0],
         desc: '아쉽지만 좋아요',
+        basePick: 13,
       },
       {
         combo: [1, 2],
@@ -1437,6 +1469,7 @@ export const combination: CombinationType[] = [
       {
         combo: [5, 2],
         desc: '어의없지만 괜찮아요',
+        basePick: 7,
       },
       {
         combo: [2, 6],
