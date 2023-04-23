@@ -1,5 +1,6 @@
 import { Dispatch, FC, SetStateAction } from 'react';
-import { Box, Stack, Tab, Tabs, styled } from '@mui/material';
+import { Box, Button, Stack, Tab, Tabs, styled } from '@mui/material';
+import { Link, useLocation } from 'react-router-dom';
 
 interface NavigatorProps {
   selectedNav: number;
@@ -49,13 +50,23 @@ export const Navigator: FC<NavigatorProps> = ({
   selectedNav,
   setSelectedNav,
 }) => {
+  const { pathname } = useLocation();
+
   return (
     <Stack
       sx={{
         justifyContent: 'center',
         alignItems: 'center',
       }}>
-      <Row>First</Row>
+      <Row sx={{
+        pb: 0,
+      }}>
+        <Button
+          component={Link}
+          to={pathname == '/sub' ? '/' : '/sub'}>
+          Link to {pathname == '/sub' ? 'Main' : 'Sub'}
+        </Button>
+      </Row>
       <Row>
         <Box
           sx={{
