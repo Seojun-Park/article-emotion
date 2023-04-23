@@ -56,7 +56,7 @@ const App: FC = () => {
               mb: '1rem',
             }}>
             <Container
-              maxWidth='md'
+              maxWidth='lg'
               sx={{
                 display: 'flex',
                 flexDirection: 'row',
