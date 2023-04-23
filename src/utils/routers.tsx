@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { BrowserRouter, createBrowserRouter } from 'react-router-dom';
 import { OptionContextProvider } from '../contexts';
 import App from '../App';
 import SubApp from '../SubApp';
@@ -7,17 +7,21 @@ export const routers = createBrowserRouter([
   {
     path: '/',
     element: (
-      <OptionContextProvider>
-        <App />
-      </OptionContextProvider>
+      <BrowserRouter basename='/'>
+        <OptionContextProvider>
+          <App />
+        </OptionContextProvider>
+      </BrowserRouter>
     ),
   },
   {
     path: '/sub',
     element: (
-      <OptionContextProvider>
-        <SubApp />
-      </OptionContextProvider>
+      <BrowserRouter basename='/sub'>
+        <OptionContextProvider>
+          <SubApp />
+        </OptionContextProvider>
+      </BrowserRouter>
     ),
   },
 ]);
