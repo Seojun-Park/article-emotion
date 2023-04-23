@@ -7,21 +7,17 @@ export const routers = createBrowserRouter([
   {
     path: '/',
     element: (
-      <BrowserRouter basename='/'>
-        <OptionContextProvider>
-          <App />
-        </OptionContextProvider>
-      </BrowserRouter>
+      <OptionContextProvider>
+        <App />
+      </OptionContextProvider>
     ),
   },
   {
     path: '/sub',
     element: (
-      <BrowserRouter basename='/sub'>
-        <OptionContextProvider>
-          <SubApp />
-        </OptionContextProvider>
-      </BrowserRouter>
+      <OptionContextProvider>
+        <SubApp />
+      </OptionContextProvider>
     ),
   },
 ]);
