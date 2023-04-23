@@ -26,6 +26,7 @@ export const ComboButton: FC<ComboButtonProps> = ({
           justifyContent: 'center',
           alignItems: 'center',
           padding: '0.5rem',
+          borderRadius:'1rem',
         }}>
         <Box
           component={'img'}

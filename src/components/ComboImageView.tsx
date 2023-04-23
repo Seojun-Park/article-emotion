@@ -42,9 +42,9 @@ export const ComboImageView: FC<ComboImageViewProps> = ({ topic }) => {
       sx={{
         display: 'flex',
         overflow: 'auto',
-        mr: '1rem',
-        ml: '1rem',
-        padding: '1rem',
+        mr: '0.5rem',
+        ml: '0.5rem',
+        padding: '1.5rem',
       }}
       justifyContent={'center'}
       spacing={2}>
@@ -59,6 +59,9 @@ export const ComboImageView: FC<ComboImageViewProps> = ({ topic }) => {
             <Paper
               sx={{
                 padding: '0.5rem',
+                pl: '2rem',
+                pr: '2rem',
+                borderRadius: '1rem',
               }}
               elevation={4}
               key={i}>

@@ -9,6 +9,57 @@ type DataType = {
 
 export const basePath = 'src/assets/htmls/images';
 
+export const iconTranslation = [
+  {
+    id: 'thanks',
+    desc: '고마워요',
+  },
+  {
+    id: 'cool',
+    desc: '멋져요',
+  },
+  {
+    id: 'funny',
+    desc: '웃겨요',
+  },
+  {
+    id: 'angry',
+    desc: '화나요',
+  },
+  {
+    id: 'sad',
+    desc: '슬퍼요',
+  },
+  {
+    id: 'embarrased',
+    desc: '부끄러워요',
+  },
+  {
+    id: 'good',
+    desc: '좋아요',
+  },
+  {
+    id: 'ok',
+    desc: '괜찮아요',
+  },
+  {
+    id: 'afraid',
+    desc: '무서워요',
+  },
+  {
+    id: 'nonsense',
+    desc: '어의없어요',
+  },
+  {
+    id: 'envy',
+    desc: '부러워요',
+  },
+  {
+    id: 'sorry',
+    desc: '안타까워요',
+  },
+];
+
 export const iconData: DataType[] = [
   {
     id: 0,
@@ -223,7 +274,7 @@ export const iconData: DataType[] = [
       {
         id: 8,
         desc: `embarrased`,
-      }, 
+      },
     ],
   },
   {
@@ -299,7 +350,7 @@ export const iconData: DataType[] = [
       {
         id: 6,
         desc: `sorry`,
-      }, 
+      },
     ],
   },
 ];
