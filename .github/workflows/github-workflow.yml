@@ -18,10 +18,10 @@ jobs:
           npm ci
           npm run build
 
-      - name: 'Starting Build'
+      - name: 'Starting Deployment'
         run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: build # The folder the action should deploy.
+          folder: dist
