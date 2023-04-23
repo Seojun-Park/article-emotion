@@ -73,8 +73,6 @@ export const SelectedView: FC<SelectedViewProps> = ({ selected, topic }) => {
     }
   };
 
-  console.log(selected, combo);
-
   return (
     <Container
       maxWidth='md'
@@ -95,7 +93,7 @@ export const SelectedView: FC<SelectedViewProps> = ({ selected, topic }) => {
               elevation={4}>
               <Box
                 component={'img'}
-                src={`src/assets/htmls/images/${
+                src={`assets/htmls/images/${
                   iconData[topic].icons[selected[0]]?.desc
                 }.png`}
                 alt='icon'
@@ -113,14 +111,14 @@ export const SelectedView: FC<SelectedViewProps> = ({ selected, topic }) => {
                 spacing={2}>
                 <Box
                   component={'img'}
-                  src={`src/assets/htmls/images/${
+                  src={`assets/htmls/images/${
                     iconData[topic].icons[selected[0]]?.desc
                   }.png`}
                   alt='icon'
                 />
                 <Box
                   component={'img'}
-                  src={`src/assets/htmls/images/${
+                  src={`assets/htmls/images/${
                     iconData[topic].icons[selected[1]]?.desc
                   }.png`}
                   alt='icon'
@@ -143,7 +141,7 @@ export const SelectedView: FC<SelectedViewProps> = ({ selected, topic }) => {
         spacing={1}
         ml={5}>
         <SelectButton
-          source={`src/assets/htmls/images/${
+          source={`assets/htmls/images/${
             !flag.recommend ? 'move01' : 'move01_on'
           }.png`}
           sx={{
@@ -158,7 +156,7 @@ export const SelectedView: FC<SelectedViewProps> = ({ selected, topic }) => {
           title='추천'
         />
         <SelectButton
-          source={`src/assets/htmls/images/${
+          source={`assets/htmls/images/${
             !flag.next ? 'move02' : 'move02_on'
           }.png`}
           sx={{

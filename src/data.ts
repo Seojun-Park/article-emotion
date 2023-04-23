@@ -7,7 +7,7 @@ export type DataType = {
   }[];
 };
 
-export const basePath = 'src/assets/htmls/images';
+export const basePath = 'assets/htmls/images';
 
 export const iconTranslation = [
   {

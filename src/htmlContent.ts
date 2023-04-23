@@ -1,4 +1,4 @@
-export const content = [
+export const htmlContent = [
   {
     id: 0,
     content: `
@@ -18,7 +18,7 @@ export const content = [
             <br />
     
             <figure>
-              <img src="src/assets/htmls/images/news/img1_1.jpg" />
+              <img src="assets/htmls/images/news/img1_1.jpg" />
               <figcaption>
                 1일 오후 국회에서 열린 용산 이태원 참사 진상규명과 재발방지를 위한
                 국정조사 특별위원회 유가족 간담회에서 유가족이 무릎을 꿇고
@@ -40,7 +40,7 @@ export const content = [
             </p>
             <br />
             <figure>
-              <img src="src/assets/htmls/images/news/img1_2.jpg" />
+              <img src="assets/htmls/images/news/img1_2.jpg" />
               <figcaption>
                 1일 오후 국회에서 열린 용산 이태원 참사 진상규명과 재발방지를 위한
                 국정조사 특별위원회 유가족 간담회가 국민의힘 소속 위원들이 불참한
@@ -62,7 +62,7 @@ export const content = [
     
             <br />
             <figure>
-              <img src="src/assets/htmls/images/news/img1_3.jpg" />
+              <img src="assets/htmls/images/news/img1_3.jpg" />
               <figcaption>
                 1일 오후 국회에서 열린 용산 이태원 참사 진상규명과 재발방지를 위한
                 국정조사 특별위원회 유가족 간담회에서 유가족이 울먹이며 발언하고
@@ -99,7 +99,7 @@ export const content = [
             </p>
             <br />
             <figure>
-              <img src="src/assets/htmls/images/news/img1_4.jpg" />
+              <img src="assets/htmls/images/news/img1_4.jpg" />
               <figcaption>
                 1일 오후 국회에서 열린 용산 이태원 참사 진상규명과 재발방지를 위한
                 국정조사 특별위원회 유가족 간담회에서 유가족이 서로 손을 잡고 있다.
@@ -149,7 +149,7 @@ export const content = [
           <br />
   
           <figure>
-            <img src="src/assets/htmls/images/news/img2_1.jpg" />
+            <img src="assets/htmls/images/news/img2_1.jpg" />
             <figcaption>전기요금 인상(PG)<br />[홍소영 제작] 일러스트</figcaption>
           </figure>
   
@@ -204,7 +204,7 @@ export const content = [
           </p>
           <br />
           <figure>
-            <img src="src/assets/htmls/images/news/img2_2.jpg" />
+            <img src="assets/htmls/images/news/img2_2.jpg" />
             <figcaption>
               서울 시내 주택 전기계량기(왼쪽)와 가스 계량기<br />
               [연합뉴스 자료사진]
@@ -246,7 +246,7 @@ export const content = [
   
           <br />
           <figure>
-            <img src="src/assets/htmls/images/news/img2_3.jpg" />
+            <img src="assets/htmls/images/news/img2_3.jpg" />
             <figcaption>
               도시가스요금 인상 (PG)<br />
               [홍소영 제작] 일러스트
@@ -293,7 +293,7 @@ export const content = [
             </p>
             <br />
             <figure>
-              <img src="src/assets/htmls/images/news/img3_1.jpg" />
+              <img src="assets/htmls/images/news/img3_1.jpg" />
               <figcaption>한동훈 법무장관. /뉴스1</figcaption>
             </figure>
     
@@ -374,7 +374,7 @@ export const content = [
         </p>
         <br />
         <figure>
-          <img src="src/assets/htmls/images/news/img4_1.jpg" />
+          <img src="assets/htmls/images/news/img4_1.jpg" />
           <figcaption>
             서울신라호텔에서 내놓은 올해 크리스마스 시즌 한정판 케이크인 '화이트
             홀리데이'<br />신라호텔 제공
@@ -416,7 +416,7 @@ export const content = [
 
         <br />
         <figure>
-          <img src="src/assets/htmls/images/news/img4_2.jpg" />
+          <img src="assets/htmls/images/news/img4_2.jpg" />
           <figcaption>
             서울신라호텔이 올해 크리스마스 시즌 한정판으로 내놓은 25만원짜리
             '얼루어링 윈터' 케이크<br />신라호텔 제공
@@ -454,7 +454,7 @@ export const content = [
 
         <br />
         <figure>
-          <img src="src/assets/htmls/images/news/img4_3.jpg" />
+          <img src="assets/htmls/images/news/img4_3.jpg" />
           <figcaption>
             서울 소공동 웨스틴조선 서울 조선델리에서 1일부터 파는 크리스마스
             케이크<br />웨스틴조선 서울 홈페이지 캡처
@@ -512,7 +512,7 @@ export const content = [
             </p>
             <br />
             <figure>
-              <img src="src/assets/htmls/images/news/img5_1.jpg" />
+              <img src="assets/htmls/images/news/img5_1.jpg" />
               <figcaption>
                 현대카드의 애플페이 11월 30일 출시 광고가 택시에서 목격됐다는 온라인
                 커뮤니티 게시글<br />
@@ -556,7 +556,7 @@ export const content = [
     
             <br />
             <figure>
-              <img src="src/assets/htmls/images/news/img5_2.jpg" />
+              <img src="assets/htmls/images/news/img5_2.jpg" />
               <figcaption>사진=온라인 자영업자 카페 캡처</figcaption>
             </figure>
     
@@ -614,7 +614,7 @@ export const content = [
         class="txt"
         style="overflow-x: hidden; height: 450px">
         <figure>
-          <img src="src/assets/htmls/images/news/img6_1.jpg" />
+          <img src="assets/htmls/images/news/img6_1.jpg" />
           <figcaption>
             인도 뭄바이에서 한 현지인 남성이 한국인 여성 스트리머의 팔을 잡고
             끌고가고 있다.<br />
@@ -681,7 +681,7 @@ export const content = [
         class="txt"
         style="overflow-x: hidden; height: 450px">
         <figure>
-          <img src="src/assets/htmls/images/news/img7_1.jpg" />
+          <img src="assets/htmls/images/news/img7_1.jpg" />
           <figcaption>쇼플레이엔터테인먼트 제공</figcaption>
         </figure>
 
@@ -740,19 +740,19 @@ export const content = [
         class="txt"
         style="overflow-x: hidden; height: 450px">
         <figure>
-          <img src="src/assets/htmls/images/news/img8_1.jpg" />
+          <img src="assets/htmls/images/news/img8_1.jpg" />
         </figure>
         <br />
         <figure>
-          <img src="src/assets/htmls/images/news/img8_2.jpg" />
+          <img src="assets/htmls/images/news/img8_2.jpg" />
         </figure>
         <br />
         <figure>
-          <img src="src/assets/htmls/images/news/img8_3.jpg" />
+          <img src="assets/htmls/images/news/img8_3.jpg" />
         </figure>
         <br />
         <figure>
-          <img src="src/assets/htmls/images/news/img8_4.jpg" />
+          <img src="assets/htmls/images/news/img8_4.jpg" />
         </figure>
 
         <p>

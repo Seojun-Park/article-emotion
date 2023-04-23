@@ -8,9 +8,9 @@ import {
   Typography,
 } from '@mui/material';
 import { Navigator, SelectButton } from './components';
-import { content } from './assets/htmls/content';
 import { iconData } from './data';
 import _ from 'lodash';
+import { htmlContent } from './htmlContent';
 
 const App: FC = () => {
   const [selectedNav, setSelectedNav] = useState<number>(0);
@@ -120,7 +120,7 @@ const App: FC = () => {
       <Container maxWidth='xl'>
         <Stack>
           <div
-            dangerouslySetInnerHTML={{ __html: content[selectedNav].content }}
+            dangerouslySetInnerHTML={{ __html: htmlContent[selectedNav].content }}
           />
           <Divider>이 기사에 대해 어떻게 생각하시나요?</Divider>
           <Container
@@ -151,7 +151,7 @@ const App: FC = () => {
                       key={idx}
                       alignItems={'center'}>
                       <SelectButton
-                        source={`src/assets/htmls/images/${selection.desc}.png`}
+                        source={`assets/htmls/images/${selection.desc}.png`}
                         onSelect={() => {
                           console.log(selection);
                           handleSelect(selection);

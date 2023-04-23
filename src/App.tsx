@@ -7,10 +7,10 @@ import {
   SelectButton,
   SelectedView,
 } from './components';
-import { content } from './assets/htmls/content';
 import { iconData } from './data';
 import _ from 'lodash';
 import { useOptionContext } from './contexts';
+import { htmlContent } from './htmlContent';
 
 const App: FC = () => {
   const [selectedNav, setSelectedNav] = useState<number>(0);
@@ -46,7 +46,9 @@ const App: FC = () => {
       <Container maxWidth='xl'>
         <Stack>
           <div
-            dangerouslySetInnerHTML={{ __html: content[selectedNav].content }}
+            dangerouslySetInnerHTML={{
+              __html: htmlContent[selectedNav].content,
+            }}
           />
           <Divider>: : 현재 기사의 공감 현황 : :</Divider>
           <Container
@@ -65,12 +67,12 @@ const App: FC = () => {
               <ComboImageView topic={selectedNav} />
               <Stack direction={'row'}>
                 <ComboButton
-                  iconPath='src/assets/htmls/images/move01.png'
+                  iconPath='assets/htmls/images/move01.png'
                   desc='추천'
                   number={recommend}
                 />
                 <ComboButton
-                  iconPath='src/assets/htmls/images/move02.png'
+                  iconPath='assets/htmls/images/move02.png'
                   desc='후속기사 원해요'
                   number={nextArticle}
                 />
@@ -101,10 +103,11 @@ const App: FC = () => {
                 direction={'row'}
                 spacing={5}>
                 {iconData[selectedNav].icons.map((selection, idx) => {
+                  console.log(selection.desc);
                   return (
                     <SelectButton
                       key={idx}
-                      source={`src/assets/htmls/images/${selection.desc}.png`}
+                      source={`assets/htmls/images/${selection.desc}.png`}
                       onSelect={() => {
                         handleSelect(selection);
                       }}
