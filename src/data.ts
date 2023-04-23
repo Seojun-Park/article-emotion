@@ -55,7 +55,7 @@ export const iconTranslation = [
     desc: '부러워요',
   },
   {
-    id: 'sorry',
+    id: 'shame',
     desc: '안타까워요',
   },
 ];
@@ -311,7 +311,7 @@ export const iconData: DataType[] = [
       },
       {
         id: 7,
-        desc: `sorry`,
+        desc: `shame`,
       },
     ],
   },
@@ -349,7 +349,7 @@ export const iconData: DataType[] = [
       },
       {
         id: 6,
-        desc: `sorry`,
+        desc: `shame`,
       },
     ],
   },
